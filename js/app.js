@@ -14,7 +14,7 @@ console.log(resultado2);
 
 
 //.some//
-//some se utiliza con arreglo de objetos//
+//some soporta arreglo simple y arreglo de objetos//
 
 const carrito = [
     { nombre: 'Guitarra', precio: 500 },
@@ -25,8 +25,10 @@ const carrito = [
     { nombre: 'Jamblock', precio: 150 }
     
 ]
-const existe = carrito.some(producto=> { 
-    return producto.nombre === 'Celular'
-})
+const existe = carrito.some(producto => producto.nombre === 'Jamblock'
+)
 
 console.log(existe);
+
+const existe2 = meses.some(mes => mes === 'Noviembre');
+console.log(existe2);
