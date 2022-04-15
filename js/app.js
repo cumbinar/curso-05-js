@@ -19,7 +19,7 @@ console.log(resultado2);
 const carrito = [
     { nombre: 'Guitarra', precio: 500 },
     { nombre: 'Timbales', precio: 1500 },
-    { nombre: 'Teclado', precio: 530 },
+    { nombre: 'Teclado', precio: 1500 },
     { nombre: 'Congas', precio: 4500 },
     { nombre: 'Campana', precio: 5035 },
     { nombre: 'Jamblock', precio: 150 }
@@ -32,3 +32,13 @@ console.log(existe);
 
 const existe2 = meses.some(mes => mes === 'Noviembre');
 console.log(existe2);
+
+//findIndex para encontrar la posición en un array//
+
+const indice = meses.findIndex(mes => mes === 'Abril');
+console.log(indice);
+
+//encontrar un indice en un arreglo de objetos//
+
+const indice2 = carrito.findIndex(producto => producto.precio === 150);
+console.log(indice2);
