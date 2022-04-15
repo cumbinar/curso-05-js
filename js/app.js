@@ -42,3 +42,27 @@ console.log(indice);
 
 const indice2 = carrito.findIndex(producto => producto.precio === 150);
 console.log(indice2);
+
+//reduce function reduce//
+
+const carrito2 = [
+    { nombre: 'Guitarra2', precio: 500 },
+    { nombre: 'Timbales2', precio: 1500 },
+    { nombre: 'Teclado2', precio: 1500 },
+    { nombre: 'Congas2', precio: 4500 },
+    { nombre: 'Campana2', precio: 5035 },
+    { nombre: 'Jamblock2', precio: 150 }
+    
+]
+
+//para saber cuánto suma el carrito////
+//hay dos formas://
+
+let total = 0;
+carrito2.forEach(producto => total += producto.precio);
+console.log(total);
+
+//reduce es la otra forma más usada://
+
+let cuenta = carrito2.reduce((total, producto) => total + producto.precio, 0);
+console.log(cuenta);
