@@ -66,3 +66,27 @@ console.log(total);
 
 let cuenta = carrito2.reduce((total, producto) => total + producto.precio, 0);
 console.log(cuenta);
+
+//filter crea un nuevo arreglo, basado en el parámetro que es evaluado////
+
+
+const carrito3 = [
+    { nombre: 'Guitarra3', precio: 500 },
+    { nombre: 'Timbales3', precio: 1500 },
+    { nombre: 'Teclado3', precio: 1500 },
+    { nombre: 'Congas3', precio: 4500 },
+    { nombre: 'Campana3', precio: 1500 },
+    { nombre: 'Jamblock3', precio: 150 }
+    
+]
+
+//buscar todos los productos que cuesten más de 600//
+
+let busqueda = carrito3.filter(producto => producto.precio > 600);
+
+console.log(busqueda);
+
+//hacer un arreglo con todos menos uno(Campana3)/
+
+let busqueda2 = carrito3.filter(producto => producto.nombre !== 'Campana3');
+console.log(busqueda2);
