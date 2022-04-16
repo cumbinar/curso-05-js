@@ -127,5 +127,18 @@ console.log(consulta); //return false, no todos son menores que 100//
 const consulta2 = carrito5.some(producto => producto.precio < 1000);
 console.log(consulta2); //return true, al menos uno cumple la condición//
 
+//concat -- spread operator para unir dos arreglos//
 
+const dias = ['lunes', 'martes', 'miercoles'];
+
+const dias2 = ['jueves', 'viernes', 'sábado', 'domingo'];
+
+console.log(dias);
+console.log(dias2);
+
+const semana = dias.concat (dias2);
+console.log(semana); 
+
+const semana2 = [...dias, ...dias2];
+console.log(semana2);
 
