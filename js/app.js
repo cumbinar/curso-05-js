@@ -142,3 +142,37 @@ console.log(semana);
 const semana2 = [...dias, ...dias2];
 console.log(semana2);
 
+const semana3 = [...dias, ...dias2, ...dias, ...dias2];
+console.log(semana3);
+
+/*Spread Operator agregar un elemento 
+al final de un arreglo*/
+
+const misMeses = ['enero', 'febrero', 'marzo'];
+
+const otroMes = [...misMeses, 'abril'];
+
+console.log(otroMes); 
+console.log(misMeses); //no se modifica, ver programación funcional...//
+
+/*Spread Operator agregar un objeto 
+al final de un arreglo de objetos*/
+
+const carrito6 = [
+    { nombre: 'Guitarra6', precio: 500, color: 'green' },
+    { nombre: 'Timbales6', precio: 1500, color: 'blue' },
+    { nombre: 'Teclado6', precio: 700, color: 'red' },
+    { nombre: 'Congas6', precio: 4500, color: 'orange' },
+    { nombre: 'Campana6', precio: 1500, color: 'purple' },
+    { nombre: 'Jamblock6', precio: 150, color: 'yelow' }
+    
+]
+
+const otroArtefacto = { producto: 'Pandereta6', precio: 150, color: 'pink' }
+
+const carrito6A = [...carrito6, otroArtefacto]; //se agrega otro objeto al arreglo
+console.log(carrito6); //no se modifica el arreglo
+console.log(carrito6A);
+
+
+
