@@ -90,3 +90,21 @@ console.log(busqueda);
 
 let busqueda2 = carrito3.filter(producto => producto.nombre !== 'Campana3');
 console.log(busqueda2);
+
+//find --crea un nuevo arreglo basado en la condición que se está revisando//
+
+const carrito4 = [
+    { nombre: 'Guitarra4', precio: 500, color: 'green' },
+    { nombre: 'Timbales4', precio: 1500, color: 'blue' },
+    { nombre: 'Teclado4', precio: 1500, color: 'red' },
+    { nombre: 'Congas4', precio: 4500, color: 'orange' },
+    { nombre: 'Campana4', precio: 1500, color: 'purple' },
+    { nombre: 'Jamblock4', precio: 150, color: 'yelow' }
+    
+]
+
+
+const nuevo = carrito4.find(producto => producto.nombre === 'Campana4');
+console.log(nuevo); //find crea un arreglo con el primer elemento que cumpla la condición//
+
+
