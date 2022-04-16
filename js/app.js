@@ -108,3 +108,24 @@ const nuevo = carrito4.find(producto => producto.nombre === 'Campana4');
 console.log(nuevo); //find crea un arreglo con el primer elemento que cumpla la condición//
 
 
+/*every -- todos los elementos de un arreglo deben cumplir la
+condición para retornar true */ //
+
+const carrito5 = [
+    { nombre: 'Guitarra5', precio: 500, color: 'green' },
+    { nombre: 'Timbales5', precio: 1500, color: 'blue' },
+    { nombre: 'Teclado5', precio: 700, color: 'red' },
+    { nombre: 'Congas5', precio: 4500, color: 'orange' },
+    { nombre: 'Campana5', precio: 1500, color: 'purple' },
+    { nombre: 'Jamblock5', precio: 150, color: 'yelow' }
+    
+]
+
+const consulta = carrito5.every(producto => producto.precio < 1000);
+console.log(consulta); //return false, no todos son menores que 100//
+
+const consulta2 = carrito5.some(producto => producto.precio < 1000);
+console.log(consulta2); //return true, al menos uno cumple la condición//
+
+
+
